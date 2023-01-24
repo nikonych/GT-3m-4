@@ -5,11 +5,9 @@ import java.util.ArrayList;
 
 public class Continent implements Serializable {
     String name;
-    ArrayList<Country> countries;
 
-    public Continent(String name, ArrayList<Country> countries) {
+    public Continent(String name) {
         this.name = name;
-        this.countries = countries;
     }
 
     public String getName() {
@@ -20,11 +18,5 @@ public class Continent implements Serializable {
         this.name = name;
     }
 
-    public ArrayList<Country> getCountries() {
-        return countries;
-    }
 
-    public void setCountries(ArrayList<Country> countries) {
-        this.countries = countries;
-    }
 }
